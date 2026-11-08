@@ -1,14 +1,14 @@
 {
-  "name": "Palier — carnet muscu",
-  "short_name": "Palier",
+  "name": "Ironlog — carnet muscu",
+  "short_name": "Ironlog",
   "description": "Carnet d'entraînement avec coach de charge",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0a0b0d",
-  "theme_color": "#0a0b0d",
+  "background_color": "#0e1116",
+  "theme_color": "#0e1116",
   "icons": [
     {
       "src": "icon-192.png",
