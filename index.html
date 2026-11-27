@@ -379,12 +379,12 @@ body.resting .vpanel{bottom:calc(86px + var(--sb))}
 .pp-n{width:78px;flex:none}.pp-n b{display:block;font-size:15px}.pp-n span{font-size:11px;color:var(--tx3)}.pp-w.cur .pp-n b{color:var(--ac)}
 .pp-k{display:inline-block;width:17px;height:17px;border-radius:5px;background:var(--ac);color:#fff;font-size:11px;font-weight:800;text-align:center;line-height:17px;margin-right:6px}.pp-k.b{background:var(--ok)}
 .pp-home{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin-top:12px;padding:12px 16px}.pp-home b{display:block;font-size:15px}.pp-home span{font-size:12.5px;color:var(--tx2)}.pp-ic{width:34px;height:34px;border-radius:10px;background:var(--acbg);color:var(--ac);display:grid;place-items:center;font-weight:800}
-.ppb{background:var(--acbg);color:var(--ac);font-weight:600;font-size:13px;border-radius:10px;padding:6px 12px;margin:8px 0 4px;display:inline-block}.pp-s{width:34px;flex:none;font-size:15px}.pp-w.cur .pp-s{color:var(--ac)}.pp-w b:not(.pp-s){font-weight:600}
+.ppb{background:var(--acbg);color:var(--ac);font-weight:600;font-size:13px;border-radius:10px;padding:6px 12px;margin:8px 0 4px;display:inline-block}.pp-s{width:34px;flex:none;font-size:15px}.pp-w.cur .pp-s{color:var(--ac)}.pp-w b:not(.pp-s){font-weight:600}.pp-v{font-size:11px;color:var(--tx3);margin-top:4px}
 .pp-card{display:flex;align-items:center;gap:12px;width:100%;margin-top:12px;background:var(--s1);border-radius:18px;padding:12px 16px}.pp-card b{font-size:16px}.pp-ic{width:36px;height:36px;border-radius:11px;background:var(--acbg);color:var(--ac);display:grid;place-items:center;flex:none}
 .pp-dots{flex:1;display:flex;gap:4px;justify-content:flex-end}.pp-dots i{width:9px;height:9px;border-radius:50%;background:var(--s3)}.pp-dots i.d{background:var(--ac);opacity:.55}.pp-dots i.c{background:var(--ac);box-shadow:0 0 0 3px var(--acbg)}.pp-wk{color:var(--ac);font-weight:800;font-size:15px;min-width:24px;text-align:right}
 .pls>div{display:flex;flex-wrap:wrap;gap:5px}.pls>div+div{margin-top:5px}.pl{display:inline-flex;align-items:baseline;gap:5px;border-radius:9px;padding:4px 9px;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums}.pl em{font-style:normal;font-weight:500;font-size:12px;opacity:.75}
 .pl.w{background:var(--acbg);color:var(--ac)}.pl.bw{background:var(--okbg);color:var(--ok)}.pl.mx{background:var(--ok);color:#fff;font-size:12px;letter-spacing:.5px}
-.pp-w{align-items:center}
+.pp-w{align-items:center}.pp-blk{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--tx3);padding:14px 0 4px}.pp-blk+.pp-w{border-top:0}
 body.resting .toast{bottom:calc(104px + var(--sb))}
 #wkTabs .tab{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 #wkTabs .tab.drag{position:relative;z-index:5;background:var(--ac)!important;color:#fff!important;box-shadow:0 8px 22px rgba(0,0,0,.5);scale:1.06;transition:scale .15s}
@@ -417,7 +417,7 @@ body.resting .reo-fab{bottom:calc(104px + var(--sb))}
 .a-rb{flex:1;display:flex;align-items:center;gap:8px;padding:12px 0;text-align:left;min-width:0}.a-rb b{font-size:18px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .a-r.nx .a-rb b{color:var(--ac)}
 .a-pp{font-size:11.5px;font-weight:800;color:var(--ac);background:var(--acbg);border-radius:7px;padding:2px 7px;flex:none}
-.a-play{width:42px;height:42px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;flex:none}.a-play svg{width:16px;height:16px;margin-left:2px}
+.a-play{width:42px;height:42px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;flex:none}.a-play svg{width:17px;height:17px;display:block}
 .a-icos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 10px}.a-ico{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 0 13px;border-radius:20px;background:var(--s1);font-size:13px;color:var(--tx);font-weight:600}.a-ico span{display:grid;place-items:center;color:var(--ac)}.a-ico svg{width:26px!important;height:26px!important}.a-ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 .ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.12em;flex:none}
@@ -1336,7 +1336,26 @@ const PP2=[
  {n:'Pic',a:[[.94,1,1],[.98,1,1],[.84,3,2]],b:[[.6,4]],an:'Singles 94 % et 98 % + 2×3',bn:'4 × 60 %'},
  {n:'Test',a:[[.9,1,1],[.96,1,1],[1.02,1,1]],b:[[1,1]],an:'Nouveau 1RM : 90 %, 96 %, 102 %',bn:'1 × max (2e séance)'}
 ];
-let PP=PP1;const syncPP=()=>{const P=S.settings.pullProg;PP=P&&P.freq===2?PP2:PP1};
+const PPV2=[{r:5,p:.79,b:[8,3],bp:.70},{r:5,p:.80,b:[8,3],bp:.71},{r:5,p:.81,b:[8,3],bp:.72},{r:5,p:.82,b:[8,3],bp:.73},
+ {r:4,p:.82,b:[4,3],d:.175},{r:3,p:.86,b:[3,3],d:.15},{r:4,p:.83,b:[4,3],d:.15},{r:3,p:.88,b:[3,3],d:.125},
+ {r:4,p:.84,b:[4,3],d:.175},{r:3,p:.89,b:[3,3],d:.15},{r:2,p:.92,b:[2,3],d:.125},{test:1}];
+const PPF=[{r:5,p:.80,b:[5,3],d:.125},{r:5,p:.81,b:[5,3],d:.125},{r:5,p:.82,b:[5,3],d:.125},{r:5,p:.83,b:[5,3],d:.125},
+ {r:4,p:.82,b:[4,3],d:.175},{r:3,p:.86,b:[3,3],d:.15},{r:4,p:.83,b:[4,3],d:.15},{r:3,p:.88,b:[3,3],d:.125},
+ {r:4,p:.84,b:[4,3],d:.175},{r:3,p:.89,b:[3,3],d:.15},{r:2,p:.92,b:[2,3],d:.125},{test:1}];
+const PPVO=[{b:[8,3],bp:.70,v:'Pause 1 s à 90°'},{b:[8,3],bp:.71,v:'Pause 1 s à 90°'},{b:[8,3],bp:.72,v:'Pause 1 s à 90°'},{b:[8,3],bp:.73,v:'Pause 1 s à 90°'},
+ {b:[6,3],bp:.74},{b:[6,3],bp:.75},{b:[6,3],bp:.76},{b:[6,3],bp:.77},
+ {b:[5,2],bp:.72},{b:[5,2],bp:.72},{b:[3,2],bp:.75},null];
+let ppTab='A';
+function ppBuild(W,P,bwSet){if(!W)return[];const bw=+S.settings.bw||76,E=bw+(P.e1||P.tm),o=[],mk=(kg,tr)=>({kg,reps:null,tr,rpe:null,warm:false,drop:false,done:false});
+  if(W.test){for(const pc of [.9,.96,1.02])o.push(mk(rnd125(E*pc-bw),1));o.push(mk(0,'max'));return o}
+  let top=null;if(W.r){top=rnd125(E*W.p-bw);o.push(mk(top,W.r))}
+  const bo=W.bp?rnd125(E*W.bp-bw):rnd125(top*(1-W.d));for(let i=0;i<W.b[1];i++)o.push(mk(bo,W.b[0]));
+  if(bwSet)o.push(mk(0,ppBwr(P)));return o}
+const ppTbl=(P,kind)=>P.freq===2?(kind==='B'?PPVO:PPF):PPV2;
+let PP=PPV2;const syncPP=()=>{PP=PPV2};
+function ppSetsV2(wk,P){return ppBuild(PPV2[Math.min(wk,PPV2.length-1)],P,true)}
+function ppBwr(P){if(!P.bwr){let r=0;const ss=[...S.sessions].sort((a,b)=>b.date-a.date);for(const s of ss){const e=s.exercises.find(x=>x.exId===PULL_ID);if(!e)continue;const ws=workSets(e);if(ws.some(x=>x.kg>0)){const b=ws.filter(x=>!(x.kg>0));if(b.length){r=b[b.length-1].reps;break}}}
+  P.bwr=Math.max(5,r||Math.round(P.max*.5));if(P.max===15)P.max=20;Store.saveMeta()}return P.bwr}
 const PULL_ID='pullup';
 function pullDefaults(){const bw=+S.settings.bw||76,ex=getEx(PULL_ID);let best=0,maxR=0;
   for(const s of S.sessions){if(s.date<Date.now()-60*DAY)continue;for(const e of s.exercises)if(e.exId===PULL_ID||/pull-?ups? with wide neutral/i.test(getEx(e.exId).n))for(const x of workSets(e)){const v=((x.kg||0)+bw)*(1+Math.min(x.reps,12)/30);if(v>best)best=v;if(!(x.kg>0))maxR=Math.max(maxR,x.reps)}}
@@ -1350,19 +1369,32 @@ function pullProg(){let P=S.settings.pullProg;syncPP();
   return P}
 const ppWeek=(P,t=Date.now())=>Math.max(0,Math.floor((mondayOf(t)-P.start)/(7*DAY)));
 const rnd125=v=>Math.max(0,Math.round(v/1.25)*1.25);
-function ppSets(kind,wk,P){const W=PP[Math.min(wk,PP.length-1)],bw=+S.settings.bw||76,tot=bw+P.tm,out=[];
+function ppSets(kind,wk,P){const T=ppTbl(P,kind);return ppBuild(T[wk],P,!(P.freq===2&&kind==='A'))}
+function ppSetsOld(kind,wk,P){const W=PP2[Math.min(wk,PP2.length-1)],bw=+S.settings.bw||76,tot=bw+P.tm,out=[];
   if(kind==='A'){for(const [pc,r,n] of W.a)for(let i=0;i<n;i++)out.push({kg:rnd125(tot*pc-bw),reps:null,tr:r,rpe:null,warm:false,drop:false,done:false})}
   else for(const [pc,n] of W.b)for(let i=0;i<n;i++)out.push({kg:0,reps:null,tr:pc>=1?'max':Math.max(3,Math.round(P.max*pc)),rpe:null,warm:false,drop:false,done:false});
   return out}
+function ppInitV2(P){if(P.v===2)return;let best=0;const bw=+S.settings.bw||76;const L=[];for(const s of S.sessions){if(s.date<Date.now()-60*DAY)continue;for(const e of s.exercises)if(e.exId===PULL_ID)for(const x of workSets(e))if(x.kg>0)L.push((x.kg+bw)*(1+Math.min(x.reps,12)/30))}
+  L.sort((a,b)=>b-a);best=L.length?(L.slice(0,2).reduce((a,b)=>a+b,0)/Math.min(2,L.length)):bw+P.tm;P.e1=rnd125(best-bw);P.v=2}
 function applyPullProg(exs,routineId,t){const P=S.settings.pullProg;if(!P||!P.on||!routineId)return exs;syncPP();const two=P.freq===2;
   const kind=routineId===P.dayA?'A':(two&&routineId===P.dayB)?'B':null;if(!kind)return exs;
   const wk=ppWeek(P,t);if(wk>=PP.length)return exs;
   let e=exs.find(x=>x.exId===PULL_ID);
-  if(!e){e=newExEntry(PULL_ID,1,undefined,undefined,kind==='A'?180:120);exs=[e,...exs]}
-  e.sets=two?ppSets(kind,wk,P):[...ppSets('A',wk,P),...ppSets('B',wk,P)];e.prog={kind,wk,two};e.rest=kind==='B'?120:180;e.group=null;
+  ppInitV2(P);const sets=ppSets(kind,wk,P);if(!sets.length)return exs;
+  if(!e){e=newExEntry(PULL_ID,1,undefined,undefined,kind==='A'?180:150);exs=[e,...exs]}
+  e.sets=sets;e.prog={kind,wk,two,v:''};e.rest=kind==='B'?150:180;e.group=null;
   const rs=e.sets.map(x=>typeof x.tr==='number'?x.tr:20);e.min=Math.min(...rs);e.max=Math.max(...rs);
   return exs}
-function ppAfterSession(sess){const P=S.settings.pullProg;if(!P||!P.on)return;const wk=ppWeek(P,sess.date);if(wk!==PP.length-1)return;
+function ppAfterSession(sess){const P=S.settings.pullProg;if(!P||!P.on)return;const wk=ppWeek(P,sess.date);
+  if(P.v===2){const two=P.freq===2,kind=sess.routineId===P.dayA?'A':(two&&sess.routineId===P.dayB)?'B':null;if(!kind||wk>=PPV2.length)return;
+    const W=ppTbl(P,kind)[wk],bw=+S.settings.bw||76,e=sess.exercises.find(x=>x.exId===PULL_ID);if(!W||!e)return;
+    const ws=workSets(e),msg=[];
+    if(kind==='A'&&!W.test&&W.r){const top=ws.find(x=>x.kg>0);if(top){const rpe=top.rpe;if(top.reps>=W.r+2||(top.reps>=W.r&&rpe!=null&&rpe<=7)){P.e1+=2.5;msg.push('charge +2,5 kg')}else if(top.reps<W.r){P.e1=Math.max(0,P.e1-2.5);msg.push('charge −2,5 kg')}}}
+    if(W.test){const one=ws.filter(x=>x.kg>0&&x.reps>=1).map(x=>(x.kg+bw)*(x.reps===1?1:1+x.reps/30)-bw);if(one.length){const n=rnd125(Math.max(...one));if(n>P.e1){P.e1=n;msg.push('1RM +'+fmt(n)+' kg')}}}
+    const bwS=ws.filter(x=>!(x.kg>0)).map(x=>x.reps);if(bwS.length){const m=bwS[bwS.length-1],t=ppBwr(P);if(W.test){if(m>P.max){P.max=m;msg.push('max '+m)}}else{P.bwr=m>t?m:m===t?t+1:Math.max(3,m);if(P.bwr>t)msg.push('à vide '+P.bwr)}}
+    if(msg.length){Store.saveMeta();setTimeout(()=>toast('Tractions : '+msg.join(' · '),4500),900)}
+    return}}function ppAfterOld(sess,P,wk){
+  if(wk!==PP2.length-1)return;
   const bw=+S.settings.bw||76;let msg=[];
   for(const e of sess.exercises){if(e.exId!==PULL_ID)continue;const ws=workSets(e);
     const one=ws.filter(x=>x.reps>=1&&x.kg>0).map(x=>(x.kg+bw)*(x.reps===1?1:1+x.reps/30)-bw);if(one.length){const n=rnd125(Math.max(...one));if(n>P.tm){msg.push(`1RM : +${fmt(n)} kg`);P.tm=n}}
@@ -1372,19 +1404,20 @@ function ppPills(sets){const g=[];for(const x of sets){const k=(x.kg>0?x.kg:0)+'
   return g.map(q=>q.tr==='max'?`<span class="pl mx">MAX</span>`:q.kg>0?`<span class="pl w"><em>${q.n}×${q.tr}</em>+${fmt(q.kg)}</span>`:`<span class="pl bw"><em>${q.n}×</em>${q.tr}</span>`).join('')}
 function ppSum(sets){const g=[];for(const x of sets){const k=(x.kg>0?'+'+fmt(x.kg):'')+'|'+x.tr;const l=g[g.length-1];if(l&&l.k===k)l.n++;else g.push({k,n:1,kg:x.kg,tr:x.tr})}
   return g.map(q=>q.tr==='max'?'max':`${q.n}×${q.tr}${q.kg>0?` <b>+${fmt(q.kg)}</b>`:''}`).join(' · ')}
-function vTractions(){const P=pullProg(),two=P.freq===2,wk=ppWeek(P),bw=+S.settings.bw||76;const R=id=>{const r=S.routines.find(x=>x.id===id);return r?r.name:'—'};
+function vTractions(){const P=pullProg();{const was=P.v;ppInitV2(P);ppBwr(P);if(was!==2)Store.saveMeta()}const two=P.freq===2,wk=ppWeek(P),bw=+S.settings.bw||76;const R=id=>{const r=S.routines.find(x=>x.id===id);return r?r.name:'—'};
   const done=wk>=PP.length;
   let h=`<div class="ah"><h1>Tractions</h1><div class="grow"></div><span class="ah-w">${done?'Cycle terminé':`Semaine ${wk+1}/${PP.length}`}</span></div>
-   <div class="xs-stats" style="margin-top:4px;grid-template-columns:1fr 1fr"><div><b class="num">+${fmt(P.tm)}</b><span>1RM</span></div><div><b class="num">${P.max}</b><span>max reps</span></div></div>
+   <div class="xs-stats" style="margin-top:4px;grid-template-columns:1fr 1fr"><div><b class="num">+${fmt(P.v===2?P.e1:P.tm)}</b><span>1RM</span></div><div><b class="num">${P.max}</b><span>max reps</span></div></div>
    ${done?`<button class="a-start" data-a="ppRestart" style="margin-top:12px">Lancer un nouveau cycle</button>`:''}
    <div class="chips" style="padding:0;margin-top:12px"><button class="chip ${two?'':'on'}" data-a="ppFreq" data-id="1" style="flex:1">1 séance</button><button class="chip ${two?'on':''}" data-a="ppFreq" data-id="2" style="flex:1">2 séances</button></div>
-   <div class="card" style="margin-top:10px;padding:4px 16px">${PP.map((W,i)=>`<div class="pp-w ${i===wk?'cur':''} ${i<wk?'past':''}"><b class="pp-s">S${i+1}</b><div class="grow pls">${two?`<div>${ppPills(ppSets('A',i,P))}</div><div>${ppPills(ppSets('B',i,P))}</div>`:`<div>${ppPills([...ppSets('A',i,P),...ppSets('B',i,P)])}</div>`}</div></div>`).join('')}</div>
+   ${two?`<div class="chips pp-tabs" style="padding:0;margin-top:14px"><button class="chip ${ppTab==='A'?'on':''}" data-a="ppTab" data-id="A" style="flex:1">Force · ${esc(R(P.dayA))}</button><button class="chip ${ppTab==='B'?'on':''}" data-a="ppTab" data-id="B" style="flex:1">Volume · ${esc(R(P.dayB))}</button></div>`:''}
+   <div class="card" style="margin-top:10px;padding:0 16px 4px">${PP.map((_,i)=>{const k=two?ppTab:'A',T=ppTbl(P,k),W=T[i],st=ppSets(k,i,P);return (i%4===0?`<div class="pp-blk">${['Base','Force','Pic'][i/4]}</div>`:'')+`<div class="pp-w ${i===wk?'cur':''} ${i<wk?'past':''}"><b class="pp-s">S${i+1}</b><div class="grow pls">${st.length?`<div>${ppPills(st)}</div>`:'<div class="pp-v" style="margin:0">Repos</div>'}${W&&W.v?`<div class="pp-v">${W.v}</div>`:''}</div></div>`}).join('')}</div>
    <div class="card" style="margin-top:12px;padding:4px 16px">
-    <div class="ir"><span>${two?'Force':'Séance'}</span><select data-pp="dayA" style="width:auto">${S.routines.map(r=>`<option value="${r.id}" ${P.dayA===r.id?'selected':''}>${esc(r.name)}</option>`).join('')}</select></div>
+    <div class="ir"><span>${two?'Séance 1':'Séance'}</span><select data-pp="dayA" style="width:auto">${S.routines.map(r=>`<option value="${r.id}" ${P.dayA===r.id?'selected':''}>${esc(r.name)}</option>`).join('')}</select></div>
 
-    ${two?`<div class="ir"><span>Volume</span><select data-pp="dayB" style="width:auto">${S.routines.filter(r=>r.id!==P.dayA).map(r=>`<option value="${r.id}" ${P.dayB===r.id?'selected':''}>${esc(r.name)}</option>`).join('')}</select></div>`:''}
-    <div class="ir"><span>1RM (+kg)</span><input data-pp="tm" inputmode="decimal" value="${fmt(P.tm)}" style="width:80px;text-align:right"></div>
-    <div class="ir"><span>Max reps</span><input data-pp="max" inputmode="numeric" value="${P.max}" style="width:80px;text-align:right"></div>
+    ${two?`<div class="ir"><span>Séance 2</span><select data-pp="dayB" style="width:auto">${S.routines.filter(r=>r.id!==P.dayA).map(r=>`<option value="${r.id}" ${P.dayB===r.id?'selected':''}>${esc(r.name)}</option>`).join('')}</select></div>`:''}
+    <div class="ir"><span>1RM (+kg)</span><input data-pp="tm" inputmode="decimal" value="${fmt(P.v===2?P.e1:P.tm)}" style="width:80px;text-align:right"></div>
+    <div class="ir"><span>Max reps</span><input data-pp="max" inputmode="numeric" value="${P.max}" style="width:80px;text-align:right"></div>${`<div class="ir"><span>À vide (fin de séance)</span><input data-pp="bwr" inputmode="numeric" value="${ppBwr(P)}" style="width:80px;text-align:right"></div>`}
     <div class="ir"><span>Actif</span><label class="switch"><input type="checkbox" data-pp="on" ${P.on?'checked':''}><span></span></label></div></div>
    <button class="link" data-a="ppRestart" style="padding:12px 2px 24px">Recommencer</button>
 `;
@@ -1895,7 +1928,7 @@ function exBlock(e,label){
      <div class="grow">${label?`<span class="ss">${label}</span>`:''}<div class="ex-title" data-x="hist">${esc(dn(ex.n))}</div><div class="ex-m" data-x="hist">${e.min}–${e.max} reps · ${fmin(e.rest)}</div></div>
      <div class="hero-ic"><button class="icon-btn" data-x="hist" aria-label="Perfs passées"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></button><button class="icon-btn" data-x="swap" aria-label="Remplacer"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4L3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></button><button class="icon-btn" data-x="menu" aria-label="Options">${ICON.more}</button></div></div>
    ${(S.notes||{})[ex.id]?`<button class="note" data-x="note">${IC.note}<span>${esc(S.notes[ex.id])}</span></button>`:''}
-   ${e.prog?`<div class="ppb">Programme · S${e.prog.wk+1}/9${e.prog.two?(e.prog.kind==="A"?" · force":" · volume"):""}</div>`:`<details class="coach ${r.tag}"><summary><span class="pill">${PILL[r.tag]}</span><span class="coach-val">${r.w!=null?`${fmt(r.w)} × ${r.reps}`:`${r.reps} reps`}</span>${r.stall?'<span style="color:var(--warn)" title="Plateau">●</span>':''}<div class="grow"></div>${r.w!=null?'<button class="btn sm pri" data-x="apply">Appliquer</button>':''}${CHEV}</summary>
+   ${e.prog?`<div class="ppb">Programme · S${e.prog.wk+1}/9${e.prog.two?(e.prog.kind==="A"?" · force":" · volume"):""}${e.prog.v?" · "+e.prog.v:""}</div>`:`<details class="coach ${r.tag}"><summary><span class="pill">${PILL[r.tag]}</span><span class="coach-val">${r.w!=null?`${fmt(r.w)} × ${r.reps}`:`${r.reps} reps`}</span>${r.stall?'<span style="color:var(--warn)" title="Plateau">●</span>':''}<div class="grow"></div>${r.w!=null?'<button class="btn sm pri" data-x="apply">Appliquer</button>':''}${CHEV}</summary>
      <div class="why"><p>${esc(r.why)}</p>${r.warm?`<p>Échauffement conseillé : ${r.warm.map(x=>`${fmt(x[0])}×${x[1]}`).join(' · ')}</p>`:''}${r.stall?`<p style="color:var(--warn)">${esc(r.stall)}</p>`:''}</div></details>`}
    <div class="setprog"><span>${d}/${w.length}</span><div class="pbar"><i style="width:${w.length?d/w.length*100:0}%"></i></div></div>
    <div class="sets"><div class="srow head ${rpe?'rpe':''}"><div></div><div>${ex.k==='bw'?'+kg':'kg'}</div><div>Reps</div>${rpe?'<div>RPE</div>':''}<div></div></div>${rows}</div>
@@ -2311,7 +2344,7 @@ setInterval(()=>{const el=$('#wkTime');if(el&&S.active&&!S.active.past)el.textCo
 /* ============ app actions ============ */
 $('#app').addEventListener('change',e=>{if(e.target.dataset.pf){const l=Prof.list(),p=l.find(x=>x.id===e.target.dataset.pf);if(p&&e.target.value.trim()){p.name=e.target.value.trim();Prof.save(l);render()}return}
   const k=e.target.dataset.pp;if(!k)return;const P=pullProg();
-  if(k==='on')P.on=e.target.checked;else if(k==='tm'){const v=pnum(e.target.value);if(v!=null)P.tm=v}else if(k==='max'){const v=parseInt(e.target.value);if(v>0)P.max=v}else P[k]=e.target.value;
+  if(k==='on')P.on=e.target.checked;else if(k==='tm'){const v=pnum(e.target.value);if(v!=null){if(P.v===2)P.e1=v;else P.tm=v}}else if(k==='max'){const v=parseInt(e.target.value);if(v>0)P.max=v}else if(k==='bwr'){const v=parseInt(e.target.value);if(v>0)P.bwr=v}else P[k]=e.target.value;
   Store.saveMeta();render()});
 $('#app').addEventListener('click',async e=>{
   const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,id=b.dataset.id;
@@ -2335,7 +2368,8 @@ $('#app').addEventListener('click',async e=>{
   else if(a==='profile'){profileSwitch()}
   else if(a==='profAdd'){profileAdd()}
   else if(a==='addBody'){addBodySheet()}
-  else if(a==='ppFreq'){const P=pullProg();P.freq=+id;syncPP();Store.saveMeta();toast(+id===2?'2 séances : force dans '+(S.routines.find(r=>r.id===P.dayA)||{}).name+', volume dans '+(S.routines.find(r=>r.id===P.dayB)||{}).name:'1 séance par semaine');render()}
+  else if(a==='ppTab'){ppTab=id;render()}
+  else if(a==='ppFreq'){const P=pullProg();P.freq=+id;syncPP();Store.saveMeta();toast(+id===2?'2 séances : force + volume':'1 séance par semaine');render()}
   else if(a==='ppRestart'){const P=pullProg();const d=pullDefaults();P.start=mondayOf(Date.now());if(d.tm>P.tm)P.tm=d.tm;P.on=true;Store.saveMeta();toast('Cycle relancé — semaine 1');render()}
   else if(a==='bodyM'){bodyM=id;render()}
   else if(a==='delBody'){S.body=S.body.filter(x=>String(x.t)!==String(id));Store.saveMeta();render()}
