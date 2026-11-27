@@ -1,4 +1,4 @@
-const VERSION = 'ironlog-v2';
+const VERSION = 'ironlog-v19';
 const SHELL = ['./', './index.html', './photos.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -46,14 +46,18 @@ self.addEventListener('message', e => {
     if (my !== restToken) return;
     const wins = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
     if (wins.some(w => w.visibilityState === 'visible' && w.focused)) return;
-    await self.registration.showNotification('Repos terminé 💪', {
-      body: d.body || 'Série suivante', tag: 'rest', renotify: true, requireInteraction: false,
-      vibrate: [350, 120, 350, 120, 350], icon: 'icon-192.png', badge: 'icon-192.png'
+    await self.registration.showNotification('⏱️ C’est à toi — série suivante !', {
+      body: d.body || 'Repos terminé', tag: 'rest', renotify: true, requireInteraction: true,
+      vibrate: [700, 150, 700, 150, 700, 150, 700],
+      actions: [{ action: 'done', title: '✓ Série faite' }, { action: 'add30', title: '+30 s' }], icon: 'icon-192.png', badge: 'icon-192.png'
     });
   }));
 });
 self.addEventListener('notificationclick', e => {
   e.notification.close();
-  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true })
-    .then(ws => ws.length ? ws[0].focus() : self.clients.openWindow('./')));
+  const act = e.action;
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(ws => {
+    if (act && ws.length) { ws.forEach(w => w.postMessage({ type: 'notif-action', action: act })); return act === 'done' ? ws[0].focus().catch(() => {}) : null; }
+    return ws.length ? ws[0].focus() : self.clients.openWindow('./');
+  }));
 });
